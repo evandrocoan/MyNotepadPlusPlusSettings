@@ -6,22 +6,22 @@
         <!-- 2 status : "show" or "hide"-->
         <GUIConfig name="StatusBar">show</GUIConfig>
         <!-- For all attributs, 2 status : "yes" or "no"-->
-        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="yes" doubleClick2Close="no" vertical="no" multiLine="no" hide="yes" />
+        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="no" doubleClick2Close="no" vertical="no" multiLine="no" hide="no" />
         <!-- 2 positions : "horizontal" or "vertical"-->
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <!-- For the attribut of position, 2 status : docked or undocked ; 2 status : "show" or "hide" -->
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" size="4" replaceBySpace="yes" />
         <!--App position-->
-        <GUIConfig name="AppPosition" x="30" y="27" width="955" height="659" isMaximized="yes" />
+        <GUIConfig name="AppPosition" x="210" y="179" width="955" height="659" isMaximized="yes" />
         <!-- For the primary scintilla view,
              2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
              4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box"  -->
-        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" folderMarkStyle="box" indentGuideLine="show" currentLineHilitingShow="show" Wrap="yes" edge="no" edgeNbColumn="100" wrapSymbolShow="hide" zoom="0" whiteSpaceShow="hide" eolShow="hide" lineWrapMethod="aligned" disableAdvancedScrolling="no" borderEdge="yes" zoom2="0" borderWidth="2" smoothFont="yes" />
+        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" folderMarkStyle="box" indentGuideLine="show" currentLineHilitingShow="show" Wrap="yes" edge="line" edgeNbColumn="100" wrapSymbolShow="hide" zoom="-1" whiteSpaceShow="hide" eolShow="hide" lineWrapMethod="indent" disableAdvancedScrolling="no" zoom2="-1" borderWidth="0" smoothFont="yes" borderEdge="yes" />
         <!-- For the secodary scintilla view,
              2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
              4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box" -->
-        <GUIConfig name="Auto-detection">autoUpdate2End</GUIConfig>
+        <GUIConfig name="Auto-detection">auto</GUIConfig>
         <GUIConfig name="CheckHistoryFiles">no</GUIConfig>
         <GUIConfig name="TrayIcon">no</GUIConfig>
         <GUIConfig name="RememberLastSession">no</GUIConfig>
@@ -46,7 +46,7 @@
 			2 : B & W
 			3 : WYSIWYG but without background colour
 		-->
-        <GUIConfig name="Print" lineNumber="no" printOption="3" headerLeft="$(FULL_CURRENT_PATH)" headerMiddle="" headerRight="$(LONG_DATE) $(TIME)" headerFontName="IBMPC" headerFontStyle="1" headerFontSize="8" footerLeft="" footerMiddle="-$(CURRENT_PRINTING_PAGE)-" footerRight="" footerFontName="" footerFontStyle="0" footerFontSize="9" margeLeft="0" margeTop="0" margeRight="0" margeBottom="0" />
+        <GUIConfig name="Print" lineNumber="no" printOption="0" headerLeft="$(FULL_CURRENT_PATH)" headerMiddle="" headerRight="$(LONG_DATE) $(TIME)" headerFontName="IBMPC" headerFontStyle="1" headerFontSize="8" footerLeft="" footerMiddle="-$(CURRENT_PRINTING_PAGE)-" footerRight="" footerFontName="" footerFontStyle="0" footerFontSize="9" margeLeft="0" margeTop="0" margeRight="0" margeBottom="0" />
         <!--
                             Backup Setting :
                                 0 : non backup
@@ -68,29 +68,36 @@
 						3 : bottom
 						>= 4 : undocked -> FloatingWindow id
 			-->
-        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20080426">no</GUIConfig>
-        <GUIConfig name="MaitainIndent">no</GUIConfig>
+        <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20150911">yes</GUIConfig>
+        <GUIConfig name="MaitainIndent">yes</GUIConfig>
         <GUIConfig name="MRU">yes</GUIConfig>
-        <GUIConfig name="URL">2</GUIConfig>
+        <GUIConfig name="URL">0</GUIConfig>
         <GUIConfig name="globalOverride" fg="no" bg="no" font="yes" fontSize="yes" bold="no" italic="no" underline="no" />
-        <GUIConfig name="auto-completion" autoCAction="3" triggerFromNbChar="1" funcParams="yes" />
-        <GUIConfig name="auto-insert" parentheses="no" brackets="no" curlyBrackets="no" quotes="no" doubleQuotes="no" htmlXmlTag="no" />
+        <GUIConfig name="auto-completion" autoCAction="3" triggerFromNbChar="2" funcParams="yes" />
         <GUIConfig name="multiInst" setting="2" />
-        <GUIConfig name="sessionExt"></GUIConfig>
+        <GUIConfig name="sessionExt">.npps</GUIConfig>
         <GUIConfig name="SmartHighLight">yes</GUIConfig>
         <GUIConfig name="SmartHighLightCaseSensitive">yes</GUIConfig>
-        <GUIConfig name="TagsMatchHighLight" TagAttrHighLight="yes" HighLightNonHtmlZone="no">yes</GUIConfig>
+        <GUIConfig name="TagsMatchHighLight" TagAttrHighLight="yes" HighLightNonHtmlZone="yes">yes</GUIConfig>
         <GUIConfig name="DetectEncoding">yes</GUIConfig>
-        <GUIConfig name="workspaceExt"></GUIConfig>
+        <GUIConfig name="auto-insert" parentheses="no" brackets="no" curlyBrackets="no" quotes="no" doubleQuotes="no" htmlXmlTag="no" />
         <GUIConfig name="MenuBar">show</GUIConfig>
         <GUIConfig name="Caret" width="1" blinkRate="250" />
-        <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="no" />
+        <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="yes" />
         <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
-        <GUIConfig name="titleBar" short="no" />
-        <GUIConfig name="stylerTheme" path="F:\Notepad++Portable\App\Notepad++\stylers.xml" />
-        <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="no" />
+        <GUIConfig name="titleBar" short="yes" />
+        <GUIConfig name="stylerTheme" path="D:\User\Dropbox\Backups\Notepad++\stylers.xml" />
+        <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="yes" />
         <GUIConfig name="MISC" fileSwitcherWithoutExtColumn="no" backSlashIsEscapeCharacterForSql="yes" newStyleSaveDlg="no" />
-        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="200">
+        <GUIConfig name="workspaceExt">.nnpw</GUIConfig>
+        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="814" topHeight="200" bottomHeight="233">
+            <FloatingWindow cont="4" x="684" y="460" width="1025" height="598" />
+            <PluginDlg pluginName="ComparePlugin.dll" id="9" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="dummy" id="0" curr="1" prev="4" isVisible="yes" />
+            <PluginDlg pluginName="NppGTags.dll" id="0" curr="3" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44084" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="44080" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="SourceCookifier.dll" id="0" curr="1" prev="-1" isVisible="yes" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44070" curr="0" prev="-1" isVisible="no" />
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="-1" />
@@ -99,10 +106,61 @@
         </GUIConfig>
     </GUIConfigs>
     <!-- The History of opened files list -->
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" />
-    <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="F:\Notepad++Portable\App\Notepad++\readme.txt" />
-        <File filename="F:\Notepad++Portable\App\Notepad++\change.log" />
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="yes" searchMode="0" transparencyMode="0" transparency="150" dotMatchesNewline="no">
+        <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P4\" />
+        <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P3\" />
+        <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P2\" />
+        <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P2\Teste preparat&#x00F3;rio para a P2_V1" />
+        <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P1\" />
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\alliedmodders\amxmodx\amxmodx" />
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\MultiMod_Plugin" />
+        <Path name="F:\Viper\forum" />
+        <Path name="F:\SteamCMD\steamapps\common\Half-Life\czero\addons\amxmodx\scripting" />
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\MultiMod_Server" />
+        <Filter name="*.ht*" />
+        <Filter name="*.*" />
+        <Find name="client_print( id, " />
+        <Find name="console_print" />
+        <Find name="370" />
+        <Find name="// Native: za_register_human_class" />
+        <Find name="[Custom Natives]" />
+        <Find name="// Marker Hud Task" />
+        <Find name="reset_vars(id, resetall, famepj)" />
+        <Find name="// Disable minmodels task" />
+        <Find name="[Custom Messages]" />
+        <Find name="stocks" />
+        <Replace name="client_print( id, print_console, " />
+        <Replace name="client_print" />
+        <Replace name='&quot;%%i&quot;' />
+        <Replace name="TASKID_PRINT_HELP" />
+        <Replace name="setMonsterData" />
+        <Replace name="g_monstersDataTrie" />
+        <Replace name="bigArrayTest" />
+        <Replace name="howMuchCharsRemaining" />
+        <Replace name="howMuchCharsAreOutPutted" />
+        <Replace name="extraChasPerItem" />
+    </FindHistory>
+    <History nbMaxFile="20" inSubMenu="no" customLength="-1">
+        <File filename="F:\Notepad++Portable\App\Notepad++\notepad++.exe" />
+        <File filename="F:\Notepad++Portable\App\Notepad++\stylers.xml" />
+        <File filename="C:\Windows\System32\Notepad2.ini" />
+        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\Meus Plugins\Multi-Mod_Fun\multi-mod_fun.sma" />
+        <File filename="D:\User\Downloads\Replacing Windows Notepad with Notepad++-2.txt" />
+        <File filename="C:\Notepad++Portable\App\Notepad++\npp.vbs" />
+        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\lasermine_023.sma" />
+        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\ToDo.txt" />
+        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\Hist&#x00F3;ria\Multi-Boot CFG\multi-boot_1.cfg" />
+        <File filename="C:\Program Files (x86)\Notepad++\langs.xml" />
+        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\Amx Mod X\CompilerDirty2\include\svn_version.tpl" />
+        <File filename="D:\User\Downloads\sublime_text_3\Data\Packages\User\Matlab.sublime-settings" />
+        <File filename="D:\User\Dropbox\Backups\Notepad++\shortcuts.xml" />
+        <File filename="D:\User\Downloads\zombie_apocalypse46 - GTX.sma" />
+        <File filename="D:\User\Downloads\zombie_apocalypse46GTX.sma" />
+        <File filename="D:\User\Downloads\last_ip.sma" />
+        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\Amx Mod X\CompilerDirty2\new.sma" />
+        <File filename="F:\SteamCMD\steamapps\common\Half-Life\czero\addons\amxmodx\logs\complaints.txt" />
+        <File filename="D:\User\Downloads\complaints.sma" />
+        <File filename="Z:\Downloads\ac_memory_leak_test.c" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
