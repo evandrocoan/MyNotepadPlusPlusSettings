@@ -15,6 +15,9 @@
         <Command name="Open file" Ctrl="no" Alt="yes" Shift="no" Key="116">$(NPP_DIRECTORY)\notepad++.exe $(CURRENT_WORD)</Command>
         <Command name="Open in another instance" Ctrl="no" Alt="yes" Shift="no" Key="117">$(NPP_DIRECTORY)\notepad++.exe $(CURRENT_WORD) -nosession -multiInst</Command>
     </UserDefinedCommands>
-    <PluginCommands />
+    <PluginCommands>
+        <PluginCommand moduleName="LocationNavigate.dll" internalID="0" Ctrl="no" Alt="yes" Shift="no" Key="37" />
+        <PluginCommand moduleName="LocationNavigate.dll" internalID="1" Ctrl="no" Alt="yes" Shift="no" Key="39" />
+    </PluginCommands>
     <ScintillaKeys />
 </NotepadPlus>

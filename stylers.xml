@@ -119,7 +119,7 @@
             <WordsStyle name="COMMENT DOC KEYWORD" styleID="17" fgColor="008080" bgColor="FFFFFF" fontName="" fontStyle="1" fontSize="" />
             <WordsStyle name="COMMENT DOC KEYWORD ERROR" styleID="18" fgColor="008080" bgColor="FFFFFF" fontName="" fontStyle="0" fontSize="" />
         </LexerType>
-        <LexerType name="cpp" desc="C++" ext="sma sp bbcode ahk">
+        <LexerType name="cpp" desc="C++" ext="sma sp bbcode ahk sublime-settings">
             <WordsStyle name="PREPROCESSOR" styleID="9" fgColor="804000" bgColor="FFFFFF" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="DEFAULT" styleID="11" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="INSTRUCTION WORD" styleID="5" fgColor="0000FF" bgColor="FFFFFF" fontName="" fontStyle="1" fontSize="" keywordClass="instre1" />
@@ -777,7 +777,7 @@
             <WordsStyle name="SGMLDEFAULT" styleID="21" fgColor="000000" bgColor="A6CAF0" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="CDATA" styleID="17" fgColor="FF8000" bgColor="FFFFFF" fontName="" fontStyle="0" fontSize="" />
         </LexerType>
-        <LexerType name="yaml" desc="YAML" ext="">
+        <LexerType name="yaml" desc="YAML" ext="sublime-syntax">
             <WordsStyle name="DEFAULT" styleID="0" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" fontSize="" />
             <WordsStyle name="IDENTIFIER" styleID="2" fgColor="000080" bgColor="FFFFFF" fontName="" fontStyle="1" fontSize="" />
             <WordsStyle name="COMMENT" styleID="1" fgColor="008000" bgColor="FFFFFF" fontName="" fontStyle="0" fontSize="" />

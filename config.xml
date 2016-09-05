@@ -13,11 +13,11 @@
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" size="4" replaceBySpace="yes" />
         <!--App position-->
-        <GUIConfig name="AppPosition" x="210" y="179" width="955" height="659" isMaximized="yes" />
+        <GUIConfig name="AppPosition" x="359" y="265" width="955" height="659" isMaximized="yes" />
         <!-- For the primary scintilla view,
              2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
              4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box"  -->
-        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" folderMarkStyle="box" indentGuideLine="show" currentLineHilitingShow="show" Wrap="yes" edge="line" edgeNbColumn="100" wrapSymbolShow="hide" zoom="-1" whiteSpaceShow="hide" eolShow="hide" lineWrapMethod="indent" disableAdvancedScrolling="no" zoom2="-1" borderWidth="0" smoothFont="yes" borderEdge="yes" />
+        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" folderMarkStyle="box" indentGuideLine="show" currentLineHilitingShow="show" Wrap="yes" edge="line" edgeNbColumn="100" wrapSymbolShow="hide" zoom="0" whiteSpaceShow="hide" eolShow="hide" lineWrapMethod="indent" disableAdvancedScrolling="no" zoom2="-1" borderWidth="0" smoothFont="yes" borderEdge="yes" />
         <!-- For the secodary scintilla view,
              2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
              4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box" -->
@@ -69,7 +69,7 @@
 						>= 4 : undocked -> FloatingWindow id
 			-->
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20150911">yes</GUIConfig>
-        <GUIConfig name="MaitainIndent">yes</GUIConfig>
+        <GUIConfig name="MaitainIndent">no</GUIConfig>
         <GUIConfig name="MRU">yes</GUIConfig>
         <GUIConfig name="URL">0</GUIConfig>
         <GUIConfig name="globalOverride" fg="no" bg="no" font="yes" fontSize="yes" bold="no" italic="no" underline="no" />
@@ -86,14 +86,14 @@
         <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="yes" />
         <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
         <GUIConfig name="titleBar" short="yes" />
-        <GUIConfig name="stylerTheme" path="D:\User\Dropbox\Backups\Notepad++\stylers.xml" />
+        <GUIConfig name="stylerTheme" path="D:\User\Dropbox\Applications\SoftwareVersioning\MyNotepadPlusPlusSettings\stylers.xml" />
         <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="yes" />
         <GUIConfig name="MISC" fileSwitcherWithoutExtColumn="no" backSlashIsEscapeCharacterForSql="yes" newStyleSaveDlg="no" />
         <GUIConfig name="workspaceExt">.nnpw</GUIConfig>
         <GUIConfig name="DockingManager" leftWidth="200" rightWidth="814" topHeight="200" bottomHeight="233">
             <FloatingWindow cont="4" x="684" y="460" width="1025" height="598" />
             <PluginDlg pluginName="ComparePlugin.dll" id="9" curr="1" prev="-1" isVisible="no" />
-            <PluginDlg pluginName="dummy" id="0" curr="1" prev="4" isVisible="yes" />
+            <PluginDlg pluginName="dummy" id="0" curr="1" prev="4" isVisible="no" />
             <PluginDlg pluginName="NppGTags.dll" id="0" curr="3" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44084" curr="1" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44080" curr="1" prev="-1" isVisible="no" />
@@ -107,6 +107,8 @@
     </GUIConfigs>
     <!-- The History of opened files list -->
     <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="yes" searchMode="0" transparencyMode="0" transparency="150" dotMatchesNewline="no">
+        <Path name="D:\User\Downloads\cannounce_1.7\source" />
+        <Path name="D:\User\Downloads\cannounce_1.7" />
         <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P4\" />
         <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P3\" />
         <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P2\" />
@@ -115,52 +117,51 @@
         <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\alliedmodders\amxmodx\amxmodx" />
         <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\MultiMod_Plugin" />
         <Path name="F:\Viper\forum" />
-        <Path name="F:\SteamCMD\steamapps\common\Half-Life\czero\addons\amxmodx\scripting" />
-        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\MultiMod_Server" />
+        <Filter name="*" />
         <Filter name="*.ht*" />
         <Filter name="*.*" />
-        <Find name="client_print( id, " />
-        <Find name="console_print" />
-        <Find name="370" />
-        <Find name="// Native: za_register_human_class" />
-        <Find name="[Custom Natives]" />
-        <Find name="// Marker Hud Task" />
-        <Find name="reset_vars(id, resetall, famepj)" />
-        <Find name="// Disable minmodels task" />
-        <Find name="[Custom Messages]" />
-        <Find name="stocks" />
-        <Replace name="client_print( id, print_console, " />
-        <Replace name="client_print" />
-        <Replace name='&quot;%%i&quot;' />
-        <Replace name="TASKID_PRINT_HELP" />
-        <Replace name="setMonsterData" />
-        <Replace name="g_monstersDataTrie" />
-        <Replace name="bigArrayTest" />
-        <Replace name="howMuchCharsRemaining" />
-        <Replace name="howMuchCharsAreOutPutted" />
-        <Replace name="extraChasPerItem" />
+        <Find name="YOUR_PATH_TO_AMXMODX" />
+        <Find name="YOUR_PATH_TO_AMXX" />
+        <Find name="YOUR_PATH_TO_AMXMODX\\" />
+        <Find name="YOUR_PATH_TO_AMXMODX\amxxpc.exe" />
+        <Find name="CalculoNumerico20162Project" />
+        <Find name="CalculoNumerico" />
+        <Find name="," />
+        <Find name="TCPDUMP" />
+        <Find name="TEE" />
+        <Find name="MACH_EMULATOR" />
+        <Replace name="YOUR_PATH_TO_ADDONS_AMX_MOD_X" />
+        <Replace name="YOUR_PATH_TO_AMX_MOD_X_COMPILER" />
+        <Replace name="YOUR_PATH_TO_AMXMODX\" />
+        <Replace name=",\n" />
+        <Replace name=".AmxxPawn" />
+        <Replace name="Galileo Code Editing.sublime-workspace" />
+        <Replace name="AmxxPawn" />
+        <Replace name=" " />
+        <Replace name="g_lastTargetTouchedName" />
+        <Replace name="TARGET_STRING_SIZE" />
     </FindHistory>
     <History nbMaxFile="20" inSubMenu="no" customLength="-1">
-        <File filename="F:\Notepad++Portable\App\Notepad++\notepad++.exe" />
-        <File filename="F:\Notepad++Portable\App\Notepad++\stylers.xml" />
-        <File filename="C:\Windows\System32\Notepad2.ini" />
-        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\Meus Plugins\Multi-Mod_Fun\multi-mod_fun.sma" />
-        <File filename="D:\User\Downloads\Replacing Windows Notepad with Notepad++-2.txt" />
-        <File filename="C:\Notepad++Portable\App\Notepad++\npp.vbs" />
-        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\lasermine_023.sma" />
-        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\ToDo.txt" />
-        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\Hist&#x00F3;ria\Multi-Boot CFG\multi-boot_1.cfg" />
-        <File filename="C:\Program Files (x86)\Notepad++\langs.xml" />
-        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\Amx Mod X\CompilerDirty2\include\svn_version.tpl" />
-        <File filename="D:\User\Downloads\sublime_text_3\Data\Packages\User\Matlab.sublime-settings" />
-        <File filename="D:\User\Dropbox\Backups\Notepad++\shortcuts.xml" />
-        <File filename="D:\User\Downloads\zombie_apocalypse46 - GTX.sma" />
-        <File filename="D:\User\Downloads\zombie_apocalypse46GTX.sma" />
-        <File filename="D:\User\Downloads\last_ip.sma" />
-        <File filename="D:\User\DataStore\GamesDataStore\Conter-Strike1.6\Outros\Addons\Multi-Mod\Amx Mod X\CompilerDirty2\new.sma" />
-        <File filename="F:\SteamCMD\steamapps\common\Half-Life\czero\addons\amxmodx\logs\complaints.txt" />
-        <File filename="D:\User\Downloads\complaints.sma" />
-        <File filename="Z:\Downloads\ac_memory_leak_test.c" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\DeathrunMod\lang\deathrun_mode_duel.txt" />
+        <File filename="D:\User\Dropbox\Applications\SublimeProjects\Galileo Code Editing.sublime-project" />
+        <File filename="D:\User\Dropbox\Applications\SublimeProjects\Galileo BBCode Editing.sublime-workspace" />
+        <File filename="D:\User\Dropbox\Applications\SublimeProjects\Galileo BBCode Editing.sublime-project" />
+        <File filename="D:\User\Dropbox\Applications\SublimeProjects\Full Sublime 3 - Galileo.sublime-workspace" />
+        <File filename="D:\User\Dropbox\Applications\SublimeProjects\CalculoNumerico2016_2.sublime-workspace" />
+        <File filename="D:\User\Dropbox\Applications\SublimeProjects\Galileo Code Editing.sublime-workspace" />
+        <File filename="D:\User\Dropbox\Applications\SublimeProjects\CalculoNumerico2016_2.sublime-project" />
+        <File filename="D:\User\Documents\Desktop\new1.sma" />
+        <File filename="D:\User\Documents\SublimeTextBuild3065x64\Data\Packages\User\Theme - NotepadPlusPlus\Notepad-Plus-Plus.tmTheme" />
+        <File filename="D:\User\Documents\SublimeTextBuild3065x64\Data\Packages\User\SublimeAmxxPawn\AmxxPawn.sublime-syntax" />
+        <File filename="C:\Users\Professional\AppData\Local\Temp\scp25789\home\evandro.coan\.vimrc" />
+        <File filename="C:\Users\Professional\AppData\Local\Temp\scp26004\home\evandro.coan\.bashrc" />
+        <File filename="D:\User\Downloads\epos\epos\app\makefile" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\2015-1_SistemasOperacionais1\TeachingEpos\img\makefile" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\2015-1_SistemasOperacionais1\TeachingEpos\makefile" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\2015-1_SistemasOperacionais1\TeachingEpos\makedefs" />
+        <File filename="D:\User\Dropbox\Applications\SpeakTime\README.md" />
+        <File filename="D:\User\Documents\SublimeText\Data\Packages\User\SublimeNotepadPlusPlusTheme\DefaultStylersTheme.tmTheme" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\Galileo\scripting\galileo.sma" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
