@@ -83,7 +83,7 @@
         <GUIConfig name="auto-insert" parentheses="no" brackets="no" curlyBrackets="no" quotes="no" doubleQuotes="no" htmlXmlTag="no" />
         <GUIConfig name="MenuBar">show</GUIConfig>
         <GUIConfig name="Caret" width="1" blinkRate="250" />
-        <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="yes" />
+        <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="no" />
         <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
         <GUIConfig name="titleBar" short="yes" />
         <GUIConfig name="stylerTheme" path="D:\User\Dropbox\Applications\SoftwareVersioning\MyNotepadPlusPlusSettings\stylers.xml" />
@@ -92,8 +92,8 @@
         <GUIConfig name="workspaceExt">.nnpw</GUIConfig>
         <GUIConfig name="DockingManager" leftWidth="200" rightWidth="814" topHeight="200" bottomHeight="233">
             <FloatingWindow cont="4" x="684" y="460" width="1025" height="598" />
-            <PluginDlg pluginName="ComparePlugin.dll" id="9" curr="1" prev="-1" isVisible="no" />
             <PluginDlg pluginName="dummy" id="0" curr="1" prev="4" isVisible="no" />
+            <PluginDlg pluginName="ComparePlugin.dll" id="9" curr="1" prev="-1" isVisible="no" />
             <PluginDlg pluginName="NppGTags.dll" id="0" curr="3" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44084" curr="1" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44080" curr="1" prev="-1" isVisible="no" />
@@ -103,10 +103,14 @@
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
             <ActiveTabs cont="3" activeTab="-1" />
+            <ActiveTabs cont="4" activeTab="-1" />
         </GUIConfig>
     </GUIConfigs>
     <!-- The History of opened files list -->
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="yes" searchMode="0" transparencyMode="0" transparency="150" dotMatchesNewline="no">
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="yes" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="yes" searchMode="0" transparencyMode="0" transparency="150" dotMatchesNewline="no">
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control\package_control" />
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control" />
+        <Path name="D:\User\Documents\AutoHotKey" />
         <Path name="D:\User\Downloads\cannounce_1.7\source" />
         <Path name="D:\User\Downloads\cannounce_1.7" />
         <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P4\" />
@@ -114,22 +118,21 @@
         <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P2\" />
         <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P2\Teste preparat&#x00F3;rio para a P2_V1" />
         <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P1\" />
-        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\alliedmodders\amxmodx\amxmodx" />
-        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\MultiMod_Plugin" />
-        <Path name="F:\Viper\forum" />
         <Filter name="*" />
         <Filter name="*.ht*" />
         <Filter name="*.*" />
-        <Find name="YOUR_PATH_TO_AMXMODX" />
-        <Find name="YOUR_PATH_TO_AMXX" />
-        <Find name="YOUR_PATH_TO_AMXMODX\\" />
-        <Find name="YOUR_PATH_TO_AMXMODX\amxxpc.exe" />
-        <Find name="CalculoNumerico20162Project" />
-        <Find name="CalculoNumerico" />
-        <Find name="," />
-        <Find name="TCPDUMP" />
-        <Find name="TEE" />
-        <Find name="MACH_EMULATOR" />
+        <Find name="os.path" />
+        <Find name="import os.path" />
+        <Find name="found_packages" />
+        <Find name="AutomaticUpgrader" />
+        <Find name="installed_packages" />
+        <Find name="pc_settings_filename" />
+        <Find name="load_list_setting" />
+        <Find name="missing_packages" />
+        <Find name="install_missing" />
+        <Find name="Sublime" />
+        <Replace name="    " />
+        <Replace name="\n" />
         <Replace name="YOUR_PATH_TO_ADDONS_AMX_MOD_X" />
         <Replace name="YOUR_PATH_TO_AMX_MOD_X_COMPILER" />
         <Replace name="YOUR_PATH_TO_AMXMODX\" />
@@ -138,30 +141,28 @@
         <Replace name="Galileo Code Editing.sublime-workspace" />
         <Replace name="AmxxPawn" />
         <Replace name=" " />
-        <Replace name="g_lastTargetTouchedName" />
-        <Replace name="TARGET_STRING_SIZE" />
     </FindHistory>
     <History nbMaxFile="20" inSubMenu="no" customLength="-1">
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\DeathrunMod\lang\deathrun_mode_duel.txt" />
-        <File filename="D:\User\Dropbox\Applications\SublimeProjects\Galileo Code Editing.sublime-project" />
-        <File filename="D:\User\Dropbox\Applications\SublimeProjects\Galileo BBCode Editing.sublime-workspace" />
-        <File filename="D:\User\Dropbox\Applications\SublimeProjects\Galileo BBCode Editing.sublime-project" />
-        <File filename="D:\User\Dropbox\Applications\SublimeProjects\Full Sublime 3 - Galileo.sublime-workspace" />
-        <File filename="D:\User\Dropbox\Applications\SublimeProjects\CalculoNumerico2016_2.sublime-workspace" />
-        <File filename="D:\User\Dropbox\Applications\SublimeProjects\Galileo Code Editing.sublime-workspace" />
-        <File filename="D:\User\Dropbox\Applications\SublimeProjects\CalculoNumerico2016_2.sublime-project" />
-        <File filename="D:\User\Documents\Desktop\new1.sma" />
-        <File filename="D:\User\Documents\SublimeTextBuild3065x64\Data\Packages\User\Theme - NotepadPlusPlus\Notepad-Plus-Plus.tmTheme" />
-        <File filename="D:\User\Documents\SublimeTextBuild3065x64\Data\Packages\User\SublimeAmxxPawn\AmxxPawn.sublime-syntax" />
-        <File filename="C:\Users\Professional\AppData\Local\Temp\scp25789\home\evandro.coan\.vimrc" />
-        <File filename="C:\Users\Professional\AppData\Local\Temp\scp26004\home\evandro.coan\.bashrc" />
-        <File filename="D:\User\Downloads\epos\epos\app\makefile" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\2015-1_SistemasOperacionais1\TeachingEpos\img\makefile" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\2015-1_SistemasOperacionais1\TeachingEpos\makefile" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\2015-1_SistemasOperacionais1\TeachingEpos\makedefs" />
-        <File filename="D:\User\Dropbox\Applications\SpeakTime\README.md" />
-        <File filename="D:\User\Documents\SublimeText\Data\Packages\User\SublimeNotepadPlusPlusTheme\DefaultStylersTheme.tmTheme" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\Galileo\scripting\galileo.sma" />
+        <File filename="F:\SteamCMD\.crash" />
+        <File filename="F:\SteamCMD\steamapps\common\Half-Life\czero\liblist.gam" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Trimmer\README.MD" />
+        <File filename="D:\User\Downloads\weapon_knife.sma" />
+        <File filename="D:\User\Documents\SmartGit\.settings\passwords" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Installed Packages\WordHighlight.sublime-package" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\SublimeNotepadPlusPlusTheme\DefaultStylersTheme.tmTheme" />
+        <File filename="D:\User\Downloads\CS_Shop.sma" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Installed Packages\SyncedSideBar\SyncedSideBar.py" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\2016-2_OperatingSystems\ICs\ic4_childrenPlayProblem.cpp" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimePackagesFork\Matlab\syntax_test_matlab.m" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\User\Package Control.system-ca-bundle" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\SublimeNotepadPlusPlusTheme\test_syntax.sma" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\SideBarEnhancements\.git" />
+        <File filename="D:\User\Documents\FileMenuTools\FileMenuTools705\register.exe" />
+        <File filename="D:\User\Downloads\Project.zip" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control\package_control\package_cleanup.py" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control\package_control\settings.py" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control\package_control\automatic_upgrader.py" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control\Package Control.sublime-settings" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
