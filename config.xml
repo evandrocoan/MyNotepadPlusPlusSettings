@@ -6,18 +6,18 @@
         <!-- 2 status : "show" or "hide"-->
         <GUIConfig name="StatusBar">show</GUIConfig>
         <!-- For all attributs, 2 status : "yes" or "no"-->
-        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="no" doubleClick2Close="no" vertical="no" multiLine="no" hide="no" />
+        <GUIConfig name="TabBar" dragAndDrop="yes" drawTopBar="yes" drawInactiveTab="yes" reduce="yes" closeButton="no" doubleClick2Close="no" vertical="no" multiLine="no" hide="no" quitOnEmpty="no" />
         <!-- 2 positions : "horizontal" or "vertical"-->
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <!-- For the attribut of position, 2 status : docked or undocked ; 2 status : "show" or "hide" -->
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" size="4" replaceBySpace="yes" />
         <!--App position-->
-        <GUIConfig name="AppPosition" x="359" y="265" width="955" height="659" isMaximized="yes" />
+        <GUIConfig name="AppPosition" x="211" y="0" width="707" height="432" isMaximized="yes" />
         <!-- For the primary scintilla view,
              2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
              4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box"  -->
-        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" folderMarkStyle="box" indentGuideLine="show" currentLineHilitingShow="show" Wrap="yes" edge="line" edgeNbColumn="100" wrapSymbolShow="hide" zoom="0" whiteSpaceShow="hide" eolShow="hide" lineWrapMethod="indent" disableAdvancedScrolling="no" zoom2="-1" borderWidth="0" smoothFont="yes" borderEdge="yes" />
+        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" folderMarkStyle="box" indentGuideLine="show" currentLineHilitingShow="show" Wrap="yes" edge="line" edgeNbColumn="100" wrapSymbolShow="hide" zoom="0" whiteSpaceShow="hide" eolShow="hide" lineWrapMethod="indent" disableAdvancedScrolling="no" zoom2="-1" borderWidth="0" smoothFont="yes" borderEdge="yes" scrollBeyondLastLine="no" />
         <!-- For the secodary scintilla view,
              2 status for Attribut lineNumberMargin, bookMarkMargin, indentGuideLine and currentLineHilitingShow: "show" or "hide"
              4 status for Attribut folderMarkStyle : "simple", "arrow", "circle" and "box" -->
@@ -88,12 +88,13 @@
         <GUIConfig name="titleBar" short="yes" />
         <GUIConfig name="stylerTheme" path="D:\User\Dropbox\Applications\SoftwareVersioning\MyNotepadPlusPlusSettings\stylers.xml" />
         <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="yes" />
-        <GUIConfig name="MISC" fileSwitcherWithoutExtColumn="no" backSlashIsEscapeCharacterForSql="yes" newStyleSaveDlg="no" />
+        <GUIConfig name="MISC" fileSwitcherWithoutExtColumn="no" backSlashIsEscapeCharacterForSql="yes" newStyleSaveDlg="no" isFolderDroppedOpenFiles="no" />
         <GUIConfig name="workspaceExt">.nnpw</GUIConfig>
-        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="814" topHeight="200" bottomHeight="233">
+        <GUIConfig name="searchEngine" searchEngineChoice="2" searchEngineCustom="" />
+        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="775" topHeight="200" bottomHeight="233">
             <FloatingWindow cont="4" x="684" y="460" width="1025" height="598" />
-            <PluginDlg pluginName="dummy" id="0" curr="1" prev="4" isVisible="no" />
             <PluginDlg pluginName="ComparePlugin.dll" id="9" curr="1" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="dummy" id="0" curr="1" prev="4" isVisible="no" />
             <PluginDlg pluginName="NppGTags.dll" id="0" curr="3" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44084" curr="1" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44080" curr="1" prev="-1" isVisible="no" />
@@ -103,34 +104,38 @@
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
             <ActiveTabs cont="3" activeTab="-1" />
-            <ActiveTabs cont="4" activeTab="-1" />
         </GUIConfig>
     </GUIConfigs>
     <!-- The History of opened files list -->
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="yes" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="yes" searchMode="0" transparencyMode="0" transparency="150" dotMatchesNewline="no">
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="yes" searchMode="0" transparencyMode="0" transparency="150" dotMatchesNewline="no">
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\SQLExec" />
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\amxmodx" />
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Packages\Java" />
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Packages\Default" />
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages" />
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\ComputerScienceGraduation\NumericalAnalysis\2014-1" />
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\" />
+        <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Compare Side-By-Side" />
         <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control\package_control" />
         <Path name="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control" />
-        <Path name="D:\User\Documents\AutoHotKey" />
-        <Path name="D:\User\Downloads\cannounce_1.7\source" />
-        <Path name="D:\User\Downloads\cannounce_1.7" />
-        <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P4\" />
-        <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P3\" />
-        <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P2\" />
-        <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P2\Teste preparat&#x00F3;rio para a P2_V1" />
-        <Path name="D:\User\GoogleDrive\Semestres_Arquivados\5a-Fase\INE5419_ENG_SOFT_2\Teste preparat&#x00F3;rio para a P1\" />
         <Filter name="*" />
-        <Filter name="*.ht*" />
+        <Filter name="*.md" />
         <Filter name="*.*" />
-        <Find name="os.path" />
-        <Find name="import os.path" />
-        <Find name="found_packages" />
-        <Find name="AutomaticUpgrader" />
-        <Find name="installed_packages" />
-        <Find name="pc_settings_filename" />
-        <Find name="load_list_setting" />
-        <Find name="missing_packages" />
-        <Find name="install_missing" />
-        <Find name="Sublime" />
+        <Filter name="*.su*" />
+        <Filter name="*.ht*" />
+        <Find name="1252" />
+        <Find name="por" />
+        <Find name="English" />
+        <Find name="Port" />
+        <Find name="langa" />
+        <Find name="Command" />
+        <Find name="show" />
+        <Find name="cmd" />
+        <Find name="psql" />
+        <Find name="import" />
+        <Replace name="Subtrees/" />
+        <Replace name="SublimeText/Data/Packages" />
+        <Replace name="remote_name" />
         <Replace name="    " />
         <Replace name="\n" />
         <Replace name="YOUR_PATH_TO_ADDONS_AMX_MOD_X" />
@@ -138,31 +143,27 @@
         <Replace name="YOUR_PATH_TO_AMXMODX\" />
         <Replace name=",\n" />
         <Replace name=".AmxxPawn" />
-        <Replace name="Galileo Code Editing.sublime-workspace" />
-        <Replace name="AmxxPawn" />
-        <Replace name=" " />
     </FindHistory>
     <History nbMaxFile="20" inSubMenu="no" customLength="-1">
-        <File filename="F:\SteamCMD\.crash" />
-        <File filename="F:\SteamCMD\steamapps\common\Half-Life\czero\liblist.gam" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Trimmer\README.MD" />
-        <File filename="D:\User\Downloads\weapon_knife.sma" />
-        <File filename="D:\User\Documents\SmartGit\.settings\passwords" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Installed Packages\WordHighlight.sublime-package" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\SublimeNotepadPlusPlusTheme\DefaultStylersTheme.tmTheme" />
-        <File filename="D:\User\Downloads\CS_Shop.sma" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Installed Packages\SyncedSideBar\SyncedSideBar.py" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\2016-2_OperatingSystems\ICs\ic4_childrenPlayProblem.cpp" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimePackagesFork\Matlab\syntax_test_matlab.m" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\User\Package Control.system-ca-bundle" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\SublimeNotepadPlusPlusTheme\test_syntax.sma" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\SideBarEnhancements\.git" />
-        <File filename="D:\User\Documents\FileMenuTools\FileMenuTools705\register.exe" />
-        <File filename="D:\User\Downloads\Project.zip" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control\package_control\package_cleanup.py" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control\package_control\settings.py" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control\package_control\automatic_upgrader.py" />
-        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\Package Control\Package Control.sublime-settings" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\README.MD" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\User\Package Control.sublime-settings" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\ComputerScienceGraduation\NumericalAnalysis\2014-1\mNRP.m" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\ComputerScienceGraduation\NumericalAnalysis\2014-1\fNRPM.m" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\.gitignore" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Packages\Default\comment.py" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Packages\Default\sort.py" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Packages\Java\Comments.tmPreferences" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Packages\Java\JavaC.sublime-build" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeWorkSpaces\amxmodx_by_destro.sublime-workspace" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeWorkSpaces\GalileoBBCodeEditing.sublime-workspace" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeWorkSpaces\GalileoCodeDevelopment.sublime-workspace" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Local\Session.sublime_session" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\amxmodx\const.sublime-syntax" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\amxmodx\mistrick-pawn.tmTheme" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\SublimeText\Data\Packages\amxmodx\AMXXEditor.py" />
+        <File filename="D:\User\Dropbox\Backups\nppBackup\postgresql.conf.2016-10-15_205615.bak" />
+        <File filename="D:\User\Documents\Desktop\postgresql_command_line_install.txt" />
+        <File filename="D:\User\Dropbox\Applications\SoftwareVersioning\ObjectBeautifier\README.MD" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />

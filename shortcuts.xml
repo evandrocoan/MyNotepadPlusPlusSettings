@@ -19,5 +19,7 @@
         <PluginCommand moduleName="LocationNavigate.dll" internalID="0" Ctrl="no" Alt="yes" Shift="no" Key="37" />
         <PluginCommand moduleName="LocationNavigate.dll" internalID="1" Ctrl="no" Alt="yes" Shift="no" Key="39" />
     </PluginCommands>
-    <ScintillaKeys />
+    <ScintillaKeys>
+        <ScintKey ScintID="2469" menuCmdID="42010" Ctrl="yes" Alt="no" Shift="yes" Key="68" />
+    </ScintillaKeys>
 </NotepadPlus>
